@@ -15,7 +15,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import com.amap.api.maps.AMap;
 import com.amap.api.maps.MapView;
 import com.amap.api.maps.UiSettings;
@@ -26,7 +25,6 @@ import com.amap.api.maps.model.Marker;
 import com.amap.api.maps.model.MarkerOptions;
 import com.amap.api.maps.model.MyLocationStyle;
 import com.amap.api.services.geocoder.GeocodeSearch;
-
 import java.io.File;
 import java.util.ArrayList;
 
@@ -55,10 +53,8 @@ public class MainActivity extends Activity implements AMap.InfoWindowAdapter {
         setContentView(R.layout.activity_main);
         v = View.inflate(this, R.layout.navlist, null);
         lv = (ListView) v.findViewById(R.id.ls);
-
         actionBar = getActionBar();
         //actionBar.setDisplayHomeAsUpEnabled(true);/
-
         //获取地图控件引用
         mMapView = (MapView) findViewById(R.id.map);
         //在activity执行onCreate时执行mMapView.onCreate(savedInstanceState)，创建地图
